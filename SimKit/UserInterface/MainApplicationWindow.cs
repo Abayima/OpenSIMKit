@@ -40,7 +40,6 @@ namespace SimKit.UserInterface
             //If the internet is available then run the system start modal
             if (this.internetIsAvailable)
                 InitSystemStartModal();
-
         }
 
         #endregion
@@ -104,6 +103,9 @@ namespace SimKit.UserInterface
 
             switch (e.ContentPanelState)
             {
+                case ContentPanelStates.CardNotFound:
+                    this.contentPanel.Controls.Add(new ContentPanels.ConnectionErrorContentPanel(this, e.PotentiallyConnectedCards));
+                    break;
                 case ContentPanelStates.CardFound:
                     this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard));
                     break;

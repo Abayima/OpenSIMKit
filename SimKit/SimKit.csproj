@@ -61,6 +61,12 @@
     <Compile Include="UserInterface\ApplicationLoading.Designer.cs">
       <DependentUpon>ApplicationLoading.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\ContentPanels\ConnectionErrorContentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\ConnectionErrorContentPanel.Designer.cs">
+      <DependentUpon>ConnectionErrorContentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\ContentPanels\EditingCardContentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="UserInterface\ApplicationLoading.resx">
       <DependentUpon>ApplicationLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\ConnectionErrorContentPanel.resx">
+      <DependentUpon>ConnectionErrorContentPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\EditingCardContentPanel.resx">
       <DependentUpon>EditingCardContentPanel.cs</DependentUpon>

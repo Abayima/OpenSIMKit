@@ -42,7 +42,7 @@ namespace SimKit
             //DEV case, use mock context
             if (argsList.Contains("-mock"))
             {
-                Dependencies.SystemContext = new MockSystemContext();
+                Dependencies.SystemContext = new MockSystemContext(!argsList.Contains("-nocard"));
                 Dependencies.ConnectivityContext = new MockConnectivityContext();
                 Dependencies.LoggingContext = new ConsoleLoggingContext();
             }

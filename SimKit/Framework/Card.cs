@@ -9,7 +9,9 @@ namespace SimKit.Framework
     {
         #region Fields
 
+        private bool isConnected;
         private CardMessage[] messages;
+        private ConnectivityErrorInformation connectivityErrorInformation;
 
         #endregion
 
@@ -26,6 +28,7 @@ namespace SimKit.Framework
 
         public Card(int maxMessageLength, int numberOfMessages)
         {
+            this.isConnected = true;
             this.messages = new CardMessage[numberOfMessages];
             for (var x = 0; x < numberOfMessages; x++)
                 this.messages[x] = new CardMessage(maxMessageLength, string.Empty);
@@ -33,9 +36,19 @@ namespace SimKit.Framework
 
         public Card(int maxMessageLength, string[] messages)
         {
+            this.isConnected = true;
             this.messages = new CardMessage[messages.Length];
             for (var x = 0; x < messages.Length; x++)
                 this.messages[x] = new CardMessage(maxMessageLength, messages[x]);
+        }
+
+        public Card(string connectivityErrorSummary)
+        {
+            this.isConnected = false;
+            this.connectivityErrorInformation = new ConnectivityErrorInformation
+                {
+                    ErrorSummary = connectivityErrorSummary
+                };
         }
 
         #endregion
@@ -91,6 +104,11 @@ namespace SimKit.Framework
             }
 
             #endregion
+        }
+
+        internal class ConnectivityErrorInformation
+        {
+            internal string ErrorSummary { get; set; }
         }
 
         #endregion

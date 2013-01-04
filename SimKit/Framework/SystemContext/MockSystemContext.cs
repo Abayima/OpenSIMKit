@@ -7,6 +7,12 @@ namespace SimKit.Framework.SystemContext
 {
     class MockSystemContext : ISystemContext
     {
+        #region Fields
+
+        private bool hasCard;
+
+        #endregion
+
         #region ISystemContent Members
 
         public event EventHandler<CardSavedEventArgs> CardSavedFinished;
@@ -18,14 +24,34 @@ namespace SimKit.Framework.SystemContext
 
         public Card GetCardConnectedToSystem(out List<Card> potentiallyConnectedCards)
         {
-            potentiallyConnectedCards = new List<Card>();
-            return new Card(256, 3);
+            if (this.hasCard)
+            {
+                potentiallyConnectedCards = new List<Card>();
+                return new Card(256, 3);
+            }
+            else
+            {
+                potentiallyConnectedCards = new List<Card>
+                    {
+                        new Card("There is a Nokia N34 connected by USB cable is not supported by SIMKit"),
+                    };
+                return null;
+            }
         }
 
         public void BeginSaveCard(Card card)
         {
             ParameterizedThreadStart threadStart = delegate { BeginSaveCardAsync(card); };
             new Thread(threadStart).Start();
+        }
+
+        #endregion
+
+        #region Constructors
+
+        internal MockSystemContext(bool hasCard)
+        {
+            this.hasCard = hasCard;
         }
 
         #endregion
