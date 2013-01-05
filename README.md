@@ -61,7 +61,10 @@ Contributors & Contacts
 Jon Gosier		jon@abayima.com
 Matt Griffiths	matt@abayima.com
 
+
 Twitter
-@opensimkit - tech news and updates related to the open source project
-@getsimkit - general Sim Kit news and information
-@abayima - general news and information
+-------
+@abayima - General Abayima news and information
+@getsimkit - News and information about SimKit for publishers
+@opensimkit - News and updates related to the open source SimKit project
+@OSK_Daemon - Follow our code commits to GitHub
