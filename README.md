@@ -32,14 +32,6 @@ There is a secondary challenge which we describe in more details below - turning
 Our aim is to ultimately make it possible to circumvent authoritarian and malicious governments who often target telecom infrastructure and service providers to silence their opposition.  We've seen a need for solutions like Open Sim Kit in locations all over the world, from Syria and Egypt to Uganda and Libya.
 
 
-Project Critiques
------------------
-
-The obvious observation many people make is that the falling costs of smart phones will result in users in developing countries adopting them, making targeting feature phones a useless endeavor. To the contrary, though the costs of smart devices themselves is in fact falling rapidly, the cost of data is not. For the roughly 4 billion users of feature phones world-wide, even a cheap or even free smart phone remains unaffordable. The ability to receive data using any phone, in a way that doesn’t rely upon a data connection, remains a valuable service. 
-
-The other observation is that though the recipient of the data SIM doesn’t really need to be technical, the publisher or user of our tech stack does. This is actually a fairly typical relationship for technology products. Though technical people produce crisis maps, non-technical users consume them; though web programmers make websites, non-technical users consume them; though engineers make mobile phones, non-technical users make calls every day.
-
-
 Abayima
 -------
 
@@ -49,22 +41,22 @@ Abayima is a non-profit organization that provides technology solutions for prot
 Milestones and Timeline
 -----------------------
 
-December		Public Documents and Planning
-				Pilots with Partners
-Mid-January		Abayima/SIM Kit Relaunch
-				Open Git Hub repository
-February		Sim Kit for Publishers
+December		Public Documents and Planning  
+				Pilots with Partners  
+Mid-January		Abayima/SIM Kit Relaunch  
+				Open Git Hub repository  
+February		Sim Kit for Publishers  
 
 
 Contributors & Contacts
 -----------------------
-Jon Gosier		jon@abayima.com
-Matt Griffiths	matt@abayima.com
+Jon Gosier		jon@abayima.com  
+Matt Griffiths	matt@abayima.com  
 
 
 Twitter
 -------
-@abayima - General Abayima news and information
-@getsimkit - News and information about SimKit for publishers
-@opensimkit - News and updates related to the open source SimKit project
-@OSK_Daemon - Follow our code commits to GitHub
+@abayima - General Abayima news and information  
+@getsimkit - News and information about SimKit for publishers  
+@opensimkit - News and updates related to the open source SimKit project  
+@OSK_Daemon - Follow our code commits to GitHub  
