@@ -46,7 +46,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SimKit.Properties.Resources.app_loading_small_DDDDDD_000000;
+            this.pictureBox2.Image = global::SimKit.Properties.Resources.app_loading_small_FFFFFF_000000;
             this.pictureBox2.Location = new System.Drawing.Point(234, 213);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
@@ -57,9 +57,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
+            this.ForeColor = System.Drawing.Color.Gray;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "SavingCardContentPanel";
             this.Size = new System.Drawing.Size(500, 500);

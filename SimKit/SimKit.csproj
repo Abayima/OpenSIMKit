@@ -35,6 +35,8 @@
     <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -67,6 +69,12 @@
     <Compile Include="UserInterface\ContentPanels\ConnectionErrorContentPanel.Designer.cs">
       <DependentUpon>ConnectionErrorContentPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\ContentPanels\ConnectionQuestionsContentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\ConnectionQuestionsContentPanel.Designer.cs">
+      <DependentUpon>ConnectionQuestionsContentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\ContentPanels\EditingCardContentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,7 +93,13 @@
     <Compile Include="UserInterface\ContentPanels\WaitingContentPanel.Designer.cs">
       <DependentUpon>WaitingContentPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\CustomControls\ImangeButton.cs">
+    <Compile Include="UserInterface\CustomControls\CustomCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\CustomControls\CustomCheckBox.Designer.cs">
+      <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\CustomControls\ImageButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserInterface\MainApplicationWindow.cs">
@@ -93,12 +107,6 @@
     </Compile>
     <Compile Include="UserInterface\MainApplicationWindow.Designer.cs">
       <DependentUpon>MainApplicationWindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\Modals\SystemStartModal.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserInterface\Modals\SystemStartModal.Designer.cs">
-      <DependentUpon>SystemStartModal.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +124,9 @@
     <EmbeddedResource Include="UserInterface\ContentPanels\ConnectionErrorContentPanel.resx">
       <DependentUpon>ConnectionErrorContentPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\ConnectionQuestionsContentPanel.resx">
+      <DependentUpon>ConnectionQuestionsContentPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\EditingCardContentPanel.resx">
       <DependentUpon>EditingCardContentPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,11 +136,11 @@
     <EmbeddedResource Include="UserInterface\ContentPanels\WaitingContentPanel.resx">
       <DependentUpon>WaitingContentPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\CustomControls\CustomCheckBox.resx">
+      <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\MainApplicationWindow.resx">
       <DependentUpon>MainApplicationWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Modals\SystemStartModal.resx">
-      <DependentUpon>SystemStartModal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,19 +171,10 @@
     <EmbeddedResource Include="Resources\app_button_blue_over.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\app_main_header.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\app_button_social_github_out.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\app_button_social_github_over.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\app_button_social_facebook_out.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\app_button_social_facebook_over.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_button_social_twitter_out.png" />
@@ -186,9 +188,31 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_button_social_home_over.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_logo_large.png" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_loading_small_DDDDDD_000000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_abayima_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_loading_small_FFFFFF_000000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_button_left_blue_out.png" />
+    <EmbeddedResource Include="Resources\app_button_left_blue_over.png" />
+    <EmbeddedResource Include="Resources\app_button_left_grey_out.png" />
+    <EmbeddedResource Include="Resources\app_button_left_grey_over.png" />
+    <EmbeddedResource Include="Resources\app_button_right_blue_out.png" />
+    <EmbeddedResource Include="Resources\app_button_right_blue_over.png" />
+    <EmbeddedResource Include="Resources\app_button_right_grey_out.png" />
+    <EmbeddedResource Include="Resources\app_button_right_grey_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_button_grey_out.png" />
+    <EmbeddedResource Include="Resources\app_button_grey_over.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

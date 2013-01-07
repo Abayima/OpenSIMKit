@@ -63,6 +63,16 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_abayima_logo {
+            get {
+                object obj = ResourceManager.GetObject("app_abayima_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap app_button_blue_out {
             get {
                 object obj = ResourceManager.GetObject("app_button_blue_out", resourceCulture);
@@ -83,9 +93,9 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap app_button_social_facebook_out {
+        internal static System.Drawing.Bitmap app_button_grey_out {
             get {
-                object obj = ResourceManager.GetObject("app_button_social_facebook_out", resourceCulture);
+                object obj = ResourceManager.GetObject("app_button_grey_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,89 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap app_button_social_facebook_over {
+        internal static System.Drawing.Bitmap app_button_grey_over {
             get {
-                object obj = ResourceManager.GetObject("app_button_social_facebook_over", resourceCulture);
+                object obj = ResourceManager.GetObject("app_button_grey_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_left_blue_out {
+            get {
+                object obj = ResourceManager.GetObject("app_button_left_blue_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_left_blue_over {
+            get {
+                object obj = ResourceManager.GetObject("app_button_left_blue_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_left_grey_out {
+            get {
+                object obj = ResourceManager.GetObject("app_button_left_grey_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_left_grey_over {
+            get {
+                object obj = ResourceManager.GetObject("app_button_left_grey_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_right_blue_out {
+            get {
+                object obj = ResourceManager.GetObject("app_button_right_blue_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_right_blue_over {
+            get {
+                object obj = ResourceManager.GetObject("app_button_right_blue_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_right_grey_out {
+            get {
+                object obj = ResourceManager.GetObject("app_button_right_grey_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_button_right_grey_over {
+            get {
+                object obj = ResourceManager.GetObject("app_button_right_grey_over", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +283,19 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap app_main_header {
+        internal static System.Drawing.Bitmap app_loading_small_FFFFFF_000000 {
             get {
-                object obj = ResourceManager.GetObject("app_main_header", resourceCulture);
+                object obj = ResourceManager.GetObject("app_loading_small_FFFFFF_000000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_logo_large {
+            get {
+                object obj = ResourceManager.GetObject("app_logo_large", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

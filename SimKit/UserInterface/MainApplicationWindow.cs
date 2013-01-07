@@ -37,9 +37,11 @@ namespace SimKit.UserInterface
             //Hook up any local event handlers
             InitializeInternalEvents();
 
-            //If the internet is available then run the system start modal
+            //If the internet is available then show the connection question content panel, else start looking for cards
             if (this.internetIsAvailable)
-                InitSystemStartModal();
+                RaiseContentPanelStateChange(this, new MainApplicationWindow.ContentPanelStateChangeEventArgs { ContentPanelState = ContentPanelStates.ConnectionQuestions });
+            else
+                RaiseContentPanelStateChange(this, new MainApplicationWindow.ContentPanelStateChangeEventArgs { ContentPanelState = ContentPanelStates.Waiting });
         }
 
         #endregion
@@ -56,14 +58,6 @@ namespace SimKit.UserInterface
             var splashScreen = new ApplicationLoading();
             splashScreen.ApplicationLoaded += splashScreen_ApplicationLoaded;
             Application.Run(splashScreen);
-        }
-
-        private void InitSystemStartModal()
-        {
-            var systemStartModal = new Modals.SystemStartModal(this.Width, this.Height);
-            systemStartModal.ModalClose += systemStartModal_ModalClose;
-            this.Controls.Add(systemStartModal);
-            systemStartModal.BringToFront();
         }
 
         private void InitializeInternalEvents()
@@ -103,6 +97,9 @@ namespace SimKit.UserInterface
 
             switch (e.ContentPanelState)
             {
+                case ContentPanelStates.ConnectionQuestions:
+                    this.contentPanel.Controls.Add(new ContentPanels.ConnectionQuestionsContentPanel(this));
+                    break;
                 case ContentPanelStates.CardNotFound:
                     this.contentPanel.Controls.Add(new ContentPanels.ConnectionErrorContentPanel(this, e.PotentiallyConnectedCards));
                     break;
@@ -119,15 +116,6 @@ namespace SimKit.UserInterface
             }
         }
 
-        private void systemStartModal_ModalClose(object sender, EventArgs e)
-        {
-            //Close the System Start Modal
-            this.Controls.Remove(sender as Modals.SystemStartModal);
-
-            //Change the content panel state
-            RaiseContentPanelStateChange(sender, new ContentPanelStateChangeEventArgs { ContentPanelState = ContentPanelStates.Waiting });
-        }
-
         private void splashScreen_ApplicationLoaded(object sender, EventArgs e)
         {
             //Set the connectivity state
@@ -140,12 +128,7 @@ namespace SimKit.UserInterface
 
         private void socialGithubButton_Click(object sender, EventArgs e)
         {
-            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.github.com");
-        }
-
-        private void socialFacebookButton_Click(object sender, EventArgs e)
-        {
-            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.facebook.com");
+            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.github.com/abayima/opensimkit");
         }
 
         private void socialTwitterButton_Click(object sender, EventArgs e)
@@ -155,7 +138,12 @@ namespace SimKit.UserInterface
 
         private void socialHomeButton_Click(object sender, EventArgs e)
         {
-            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.simkit.co");
+            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.opensimkit.com");
+        }
+
+        private void abayimaButton_Click(object sender, EventArgs e)
+        {
+            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.abayima.com");
         }
 
         #endregion
@@ -173,6 +161,7 @@ namespace SimKit.UserInterface
 
         internal enum ContentPanelStates
         {
+            ConnectionQuestions,
             Waiting,
             CardFound,
             CardNotFound,

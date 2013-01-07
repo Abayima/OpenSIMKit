@@ -118,17 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="app_abayima_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_abayima_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="app_button_blue_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_button_blue_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="app_button_blue_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_button_blue_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="app_button_social_facebook_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\app_button_social_facebook_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="app_button_grey_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_grey_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="app_button_social_facebook_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\app_button_social_facebook_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="app_button_grey_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_grey_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_left_blue_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_left_blue_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_left_blue_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_left_blue_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_left_grey_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_left_grey_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_left_grey_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_left_grey_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_right_blue_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_right_blue_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_right_blue_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_right_blue_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_right_grey_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_right_grey_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_button_right_grey_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_button_right_grey_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="app_button_social_github_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_button_social_github_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +184,11 @@
   <data name="app_loading_small_DDDDDD_000000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_loading_small_DDDDDD_000000.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="app_main_header" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\app_main_header.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="app_loading_small_FFFFFF_000000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_loading_small_FFFFFF_000000.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_logo_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_logo_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="app_splash_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_splash_screen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
