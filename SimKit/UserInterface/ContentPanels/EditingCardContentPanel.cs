@@ -20,7 +20,7 @@ namespace SimKit.UserInterface.ContentPanels
 
         #region Constructors
 
-        internal EditingCardContentPanel(MainApplicationWindow parent, Card card)
+        internal EditingCardContentPanel(MainApplicationWindow parent, Card card, bool justSaved)
         {
             //Set the local instance of the parent form
             this.parent = parent;
@@ -33,6 +33,10 @@ namespace SimKit.UserInterface.ContentPanels
 
             //Initialize the message boxes
             InitializeMessageBoxes();
+
+            //If just saved then show the saved message
+            if (justSaved)
+                ToggleJustSavedMessage();
         }
 
         #endregion
@@ -53,6 +57,25 @@ namespace SimKit.UserInterface.ContentPanels
             }
         }
 
+        private void ToggleJustSavedMessage()
+        {
+            if (this.justSavedPanel.InvokeRequired)
+            {
+                this.justSavedPanel.Invoke(new MethodInvoker(delegate { ToggleJustSavedMessage(); }));
+                return;
+            }
+
+            this.justSavedPanel.Visible = !this.justSavedPanel.Visible;
+
+            if (!this.justSavedPanel.Visible)
+                return;
+
+            //Create and start a timer to hide the just saved message
+            var t = new Timer { Interval = 1000 };
+            t.Tick += delegate(object sender, EventArgs e) { t.Enabled = false; ToggleJustSavedMessage(); };
+            t.Enabled = true;
+        }
+
         #endregion
 
         #region Event Handlers
@@ -67,6 +90,19 @@ namespace SimKit.UserInterface.ContentPanels
                 {
                     ContentPanelState = MainApplicationWindow.ContentPanelStates.SavingCard,
                     ConnectedCard = this.card
+                };
+
+            //raise the event on the parent
+            this.parent.RaiseContentPanelStateChange(this, eventArgs);
+        }
+
+        private void disconnectButton_Click(object sender, EventArgs e)
+        {
+            //Build the event args to pass back up to the main application window
+            var eventArgs = new MainApplicationWindow.ContentPanelStateChangeEventArgs
+                {
+                    ContentPanelState = MainApplicationWindow.ContentPanelStates.EjectingCard,
+                    ConnectedCard = this.card,
                 };
 
             //raise the event on the parent

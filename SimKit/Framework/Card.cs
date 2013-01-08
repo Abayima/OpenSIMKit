@@ -22,6 +22,11 @@ namespace SimKit.Framework
             get { return this.messages; }
         }
 
+        internal ConnectivityErrorInformation ConnectivityError
+        {
+            get { return this.connectivityErrorInformation; }
+        }
+
         #endregion
 
         #region Construtors

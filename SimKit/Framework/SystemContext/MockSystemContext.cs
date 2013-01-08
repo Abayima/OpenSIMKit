@@ -10,6 +10,7 @@ namespace SimKit.Framework.SystemContext
         #region Fields
 
         private bool hasCard;
+        private int getCardCount = 0;
 
         #endregion
 
@@ -24,6 +25,8 @@ namespace SimKit.Framework.SystemContext
 
         public Card GetCardConnectedToSystem(out List<Card> potentiallyConnectedCards)
         {
+            this.getCardCount += 1;
+
             if (this.hasCard)
             {
                 potentiallyConnectedCards = new List<Card>();
@@ -31,10 +34,26 @@ namespace SimKit.Framework.SystemContext
             }
             else
             {
-                potentiallyConnectedCards = new List<Card>
-                    {
-                        new Card("There is a Nokia N34 connected by USB cable is not supported by SIMKit"),
-                    };
+                if (getCardCount < 2)
+                {
+                    potentiallyConnectedCards = new List<Card>
+                        {
+                            new Card(SimKit.Properties.Resources.error_devices_nodevices),
+                        };
+                }
+                else if (getCardCount < 3)
+                {
+                    potentiallyConnectedCards = new List<Card>
+                        {
+                            new Card(SimKit.Properties.Resources.error_devices_nodevices),
+                            new Card(SimKit.Properties.Resources.error_devices_devicenotsupported.Replace("[DEVICE]", "Nokia N95")),
+                        };
+                }
+                else
+                {
+                    potentiallyConnectedCards = new List<Card>();
+                    return new Card(256, 3);
+                }
                 return null;
             }
         }
@@ -43,6 +62,11 @@ namespace SimKit.Framework.SystemContext
         {
             ParameterizedThreadStart threadStart = delegate { BeginSaveCardAsync(card); };
             new Thread(threadStart).Start();
+        }
+
+        public void CardIsBeingRemoved(Card card)
+        {
+            this.getCardCount = 0;
         }
 
         #endregion

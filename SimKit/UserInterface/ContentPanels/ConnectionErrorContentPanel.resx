@@ -118,13 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>SIMKit could not detect any connected
-cards that can be used at the moment.
+    <value>SIMKit could not detect any connected cards that can be used at the moment.
 
-Have a look at the list of possible 
-connection errors belew. If they don't 
-help you solve the problem, look at 
-the help links on the right.
+Have a look at the list of possible  connection errors belew. If they don't help 
+you solve the problem, look at the help links on the right.
 </value>
   </data>
 </root>

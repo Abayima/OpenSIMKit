@@ -81,6 +81,12 @@
     <Compile Include="UserInterface\ContentPanels\EditingCardContentPanel.Designer.cs">
       <DependentUpon>EditingCardContentPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\ContentPanels\EjectingCardContentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\EjectingCardContentPanel.Designer.cs">
+      <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\ContentPanels\SavingCardContentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="UserInterface\CustomControls\CustomCheckBox.Designer.cs">
       <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\CustomControls\ErrorBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\CustomControls\ErrorBlock.Designer.cs">
+      <DependentUpon>ErrorBlock.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\CustomControls\ImageButton.cs">
       <SubType>Component</SubType>
@@ -130,6 +142,9 @@
     <EmbeddedResource Include="UserInterface\ContentPanels\EditingCardContentPanel.resx">
       <DependentUpon>EditingCardContentPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\EjectingCardContentPanel.resx">
+      <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\SavingCardContentPanel.resx">
       <DependentUpon>SavingCardContentPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\CustomControls\CustomCheckBox.resx">
       <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\CustomControls\ErrorBlock.resx">
+      <DependentUpon>ErrorBlock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\MainApplicationWindow.resx">
       <DependentUpon>MainApplicationWindow.cs</DependentUpon>
@@ -213,6 +231,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_button_grey_out.png" />
     <EmbeddedResource Include="Resources\app_button_grey_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_errorblock_bottom.png" />
+    <EmbeddedResource Include="Resources\app_errorblock_mid.png" />
+    <EmbeddedResource Include="Resources\app_errorblock_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_blue_questionmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_blue_tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_red_button_out.png" />
+    <EmbeddedResource Include="Resources\app_red_button_over.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

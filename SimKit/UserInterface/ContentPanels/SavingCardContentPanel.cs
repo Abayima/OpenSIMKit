@@ -47,7 +47,7 @@ namespace SimKit.UserInterface.ContentPanels
             //Build the event args to pass up to the main application window
             var eventArgs = new MainApplicationWindow.ContentPanelStateChangeEventArgs
             {
-                ContentPanelState = MainApplicationWindow.ContentPanelStates.CardFound,
+                ContentPanelState = MainApplicationWindow.ContentPanelStates.CardSaved,
                 ConnectedCard = this.card
             };
 

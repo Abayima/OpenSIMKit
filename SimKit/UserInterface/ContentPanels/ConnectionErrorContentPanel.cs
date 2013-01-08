@@ -6,6 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using SimKit.Framework;
+using SimKit.UserInterface.CustomControls;
 
 namespace SimKit.UserInterface.ContentPanels
 {
@@ -41,7 +42,39 @@ namespace SimKit.UserInterface.ContentPanels
 
         private void DisplayConnectionErrors()
         {
+            foreach (var card in this.potentiallyConnectedCards)
+                this.connectionErrorsPanel.Controls.Add(new ErrorBlock(card.ConnectivityError.ErrorSummary));
+        }
 
+        #endregion
+
+        #region Event Handlers
+
+        private void rescanButton_Click(object sender, EventArgs e)
+        {
+            //Build the event args to pass up to the parent
+            var eventArgs = new MainApplicationWindow.ContentPanelStateChangeEventArgs
+                {
+                    ContentPanelState = MainApplicationWindow.ContentPanelStates.Waiting
+                };
+
+            //Raise the content panel change event on the parent
+            this.parent.RaiseContentPanelStateChange(this, eventArgs);
+        }
+
+        private void instructionHelpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.parent.OpenWebBrowserOrShowInternetAddressInMessageBox(SimKit.Properties.Resources.link_help_stepbystep);
+        }
+
+        private void devicesHelpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.parent.OpenWebBrowserOrShowInternetAddressInMessageBox(SimKit.Properties.Resources.link_help_devices);
+        }
+
+        private void contributeHelpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.parent.OpenWebBrowserOrShowInternetAddressInMessageBox(SimKit.Properties.Resources.link_help_contribute);
         }
 
         #endregion

@@ -13,6 +13,8 @@ namespace SimKit.Framework.SystemContext
         Card GetCardConnectedToSystem(out List<Card> potentiallyConnectedCards);
 
         void BeginSaveCard(Card card);
+
+        void CardIsBeingRemoved(Card card);
     }
 }
 

@@ -73,6 +73,26 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_blue_questionmark {
+            get {
+                object obj = ResourceManager.GetObject("app_blue_questionmark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_blue_tick {
+            get {
+                object obj = ResourceManager.GetObject("app_blue_tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap app_button_blue_out {
             get {
                 object obj = ResourceManager.GetObject("app_button_blue_out", resourceCulture);
@@ -253,6 +273,36 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_errorblock_bottom {
+            get {
+                object obj = ResourceManager.GetObject("app_errorblock_bottom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_errorblock_mid {
+            get {
+                object obj = ResourceManager.GetObject("app_errorblock_mid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_errorblock_top {
+            get {
+                object obj = ResourceManager.GetObject("app_errorblock_top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap app_header_modal_systemstart {
             get {
                 object obj = ResourceManager.GetObject("app_header_modal_systemstart", resourceCulture);
@@ -303,10 +353,75 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_red_button_out {
+            get {
+                object obj = ResourceManager.GetObject("app_red_button_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_red_button_over {
+            get {
+                object obj = ResourceManager.GetObject("app_red_button_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap app_splash_screen {
             get {
                 object obj = ResourceManager.GetObject("app_splash_screen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open SIMKit detected the device [DEVICE] connected to your computer but this type of device is not supported by SIMKit.
+        /// </summary>
+        internal static string error_devices_devicenotsupported {
+            get {
+                return ResourceManager.GetString("error_devices_devicenotsupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open SIMKit could not find any devices connected to your computer..
+        /// </summary>
+        internal static string error_devices_nodevices {
+            get {
+                return ResourceManager.GetString("error_devices_nodevices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        /// </summary>
+        internal static string link_help_contribute {
+            get {
+                return ResourceManager.GetString("link_help_contribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        /// </summary>
+        internal static string link_help_devices {
+            get {
+                return ResourceManager.GetString("link_help_devices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        /// </summary>
+        internal static string link_help_stepbystep {
+            get {
+                return ResourceManager.GetString("link_help_stepbystep", resourceCulture);
             }
         }
     }

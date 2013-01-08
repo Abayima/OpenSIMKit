@@ -121,6 +121,12 @@
   <data name="app_abayima_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_abayima_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="app_blue_questionmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_blue_questionmark.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_blue_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_blue_tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="app_button_blue_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_button_blue_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,6 +181,15 @@
   <data name="app_button_social_twitter_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_button_social_twitter_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="app_errorblock_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_errorblock_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_errorblock_mid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_errorblock_mid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_errorblock_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_errorblock_top.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="app_header_modal_systemstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_header_modal_systemstart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,7 +205,28 @@
   <data name="app_logo_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_logo_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="app_red_button_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_red_button_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_red_button_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_red_button_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="app_splash_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_splash_screen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error_devices_devicenotsupported" xml:space="preserve">
+    <value>Open SIMKit detected the device [DEVICE] connected to your computer but this type of device is not supported by SIMKit</value>
+  </data>
+  <data name="error_devices_nodevices" xml:space="preserve">
+    <value>Open SIMKit could not find any devices connected to your computer.</value>
+  </data>
+  <data name="link_help_contribute" xml:space="preserve">
+    <value>http://www.opensimkit.com</value>
+  </data>
+  <data name="link_help_devices" xml:space="preserve">
+    <value>http://www.opensimkit.com</value>
+  </data>
+  <data name="link_help_stepbystep" xml:space="preserve">
+    <value>http://www.opensimkit.com</value>
   </data>
 </root>

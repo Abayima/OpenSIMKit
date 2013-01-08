@@ -53,6 +53,19 @@ namespace SimKit.UserInterface
             ContentPanelStateChange(sender, e);
         }
 
+        internal void OpenWebBrowserOrShowInternetAddressInMessageBox(string address)
+        {
+            if (this.internetIsAvailable)
+                Process.Start(address);
+            else
+                MessageBox.Show(
+                    "SIMKit couldn't find a connection to the Internet. You can find what you were looking for by going " +
+                    "to the following address in your web browser:\n\n" + address,
+                    "Are you connected to the Internet?",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
+
         private void InitAndRunSplashScreen()
         {
             var splashScreen = new ApplicationLoading();
@@ -64,19 +77,6 @@ namespace SimKit.UserInterface
         {
             //Attached the event handler to change the state of the content panel
             ContentPanelStateChange += MainApplicationWindow_ContentPanelStateChange;
-        }
-
-        private void OpenWebBrowserOrShowInternetAddressInMessageBox(string address)
-        {
-            if (this.internetIsAvailable)
-                Process.Start(address);
-            else
-                MessageBox.Show(
-                    "SIMKit couldn't find a connection to the Internet. You can find what you were looking for by going " +
-                    "to the following address in your web browser:\n\n" + address,
-                    "Are you connected to the Internet?",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
         }
 
         #endregion
@@ -97,6 +97,9 @@ namespace SimKit.UserInterface
 
             switch (e.ContentPanelState)
             {
+                case ContentPanelStates.EjectingCard:
+                    this.contentPanel.Controls.Add(new ContentPanels.EjectingCardContentPanel(this, e.ConnectedCard));
+                    break;
                 case ContentPanelStates.ConnectionQuestions:
                     this.contentPanel.Controls.Add(new ContentPanels.ConnectionQuestionsContentPanel(this));
                     break;
@@ -104,7 +107,10 @@ namespace SimKit.UserInterface
                     this.contentPanel.Controls.Add(new ContentPanels.ConnectionErrorContentPanel(this, e.PotentiallyConnectedCards));
                     break;
                 case ContentPanelStates.CardFound:
-                    this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard));
+                    this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard, false));
+                    break;
+                case ContentPanelStates.CardSaved:
+                    this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard, true));
                     break;
                 case ContentPanelStates.SavingCard:
                     this.contentPanel.Controls.Add(new ContentPanels.SavingCardContentPanel(this, e.ConnectedCard));
@@ -166,6 +172,8 @@ namespace SimKit.UserInterface
             CardFound,
             CardNotFound,
             SavingCard,
+            CardSaved,
+            EjectingCard,
         }
 
         #endregion
