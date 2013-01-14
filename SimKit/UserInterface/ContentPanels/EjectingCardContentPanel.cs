@@ -11,7 +11,7 @@ namespace SimKit.UserInterface.ContentPanels
 {
     public partial class EjectingCardContentPanel : UserControl
     {
-        internal EjectingCardContentPanel(MainApplicationWindow parent, Card card)
+        internal  EjectingCardContentPanel(MainApplicationWindow parent, Card card)
         {
             //Init the UI
             InitializeComponent();

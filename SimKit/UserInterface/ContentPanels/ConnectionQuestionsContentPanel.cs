@@ -55,7 +55,9 @@ namespace SimKit.UserInterface.ContentPanels
             var recordUserData = this.customCheckbox2.Selected;
 
             //Register the users connectivity choices with the framework
-            Dependencies.ConnectivityContext.SetUserConnectivityChoices(recordUse, recordUserData);
+            var connectivityContext = Dependencies.ConnectivityContext;
+
+            connectivityContext.SetUserConnectivityChoices(recordUse, recordUserData);
 
             //Build the event args to pass back up to the parent
             var eventArgs = new MainApplicationWindow.ContentPanelStateChangeEventArgs

@@ -30,7 +30,7 @@ namespace SimKit.Framework.SystemContext
             if (this.hasCard)
             {
                 potentiallyConnectedCards = new List<Card>();
-                return new Card(256, 3);
+                return new Card(256, 10);
             }
             else
             {
@@ -52,7 +52,7 @@ namespace SimKit.Framework.SystemContext
                 else
                 {
                     potentiallyConnectedCards = new List<Card>();
-                    return new Card(256, 3);
+                    return new Card(256, 10);
                 }
                 return null;
             }

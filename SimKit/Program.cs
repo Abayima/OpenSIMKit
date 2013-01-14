@@ -29,7 +29,10 @@ namespace SimKit
         {
             if (args.Length == 0)
             {
-                //TODO: Set up base dependencies
+                //TODO these need to be changed to real context's once they are implemented
+                Dependencies.SystemContext = new MockSystemContext(false);
+                Dependencies.ConnectivityContext = new MockConnectivityContext();
+                Dependencies.LoggingContext = new ConsoleLoggingContext();
                 return;
             }
 
