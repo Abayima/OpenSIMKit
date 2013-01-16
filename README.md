@@ -4,6 +4,12 @@ Open Sim Kit
 Open Sim Kit (OSK) is FOSS software for editing the content of SIM cards.
 
 
+Community Wiki
+--------------
+
+For full(ish) documentation and discussions visit the project wiki - http://dev.opensimkit.com
+
+
 Introduction
 ------------
 
