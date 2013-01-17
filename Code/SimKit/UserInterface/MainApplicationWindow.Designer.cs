@@ -42,22 +42,11 @@
             this.socialHomeButton = new SIMKIT.UserInterface.CustomControls.ImageButton();
             this.socialTwitterButton = new SIMKIT.UserInterface.CustomControls.ImageButton();
             this.socialGithubButton = new SIMKIT.UserInterface.CustomControls.ImageButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.devWikiLink = new System.Windows.Forms.LinkLabel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.knightNewsChallengeLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.abayimaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socialHomeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socialTwitterButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socialGithubButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -213,103 +202,12 @@
             this.socialGithubButton.TabStop = false;
             this.socialGithubButton.Click += new System.EventHandler(this.socialGithubButton_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SimKit.Properties.Resources.app_icon_tick;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 414);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(85, 416);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 45);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "The OSK interactive demo is\r\navailable for download, you \r\nshould know, you\'re us" +
-    "ing it!";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(85, 549);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 30);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "The OSK dev wiki is up and\r\nrunning. You can see it";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SimKit.Properties.Resources.app_icon_tick;
-            this.pictureBox3.Location = new System.Drawing.Point(31, 542);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            // 
-            // devWikiLink
-            // 
-            this.devWikiLink.AutoSize = true;
-            this.devWikiLink.Location = new System.Drawing.Point(213, 565);
-            this.devWikiLink.Name = "devWikiLink";
-            this.devWikiLink.Size = new System.Drawing.Size(29, 13);
-            this.devWikiLink.TabIndex = 17;
-            this.devWikiLink.TabStop = true;
-            this.devWikiLink.Text = "here";
-            this.devWikiLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.devWikiLink_LinkClicked);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(85, 476);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 45);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "OSK has won the Knight \r\nNews Challenge! Read about\r\nit ";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SimKit.Properties.Resources.app_icon_prize;
-            this.pictureBox4.Location = new System.Drawing.Point(31, 474);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // knightNewsChallengeLink
-            // 
-            this.knightNewsChallengeLink.AutoSize = true;
-            this.knightNewsChallengeLink.Location = new System.Drawing.Point(97, 507);
-            this.knightNewsChallengeLink.Name = "knightNewsChallengeLink";
-            this.knightNewsChallengeLink.Size = new System.Drawing.Size(29, 13);
-            this.knightNewsChallengeLink.TabIndex = 20;
-            this.knightNewsChallengeLink.TabStop = true;
-            this.knightNewsChallengeLink.Text = "here";
-            this.knightNewsChallengeLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.knightNewsChallengeLink_LinkClicked);
-            // 
             // MainApplicationWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(794, 622);
-            this.Controls.Add(this.knightNewsChallengeLink);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.devWikiLink);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.abayimaButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -335,9 +233,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.socialHomeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socialTwitterButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socialGithubButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,13 +254,5 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private System.Windows.Forms.Label label4;
         private SIMKIT.UserInterface.CustomControls.ImageButton abayimaButton;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.LinkLabel devWikiLink;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.LinkLabel knightNewsChallengeLink;
     }
 }

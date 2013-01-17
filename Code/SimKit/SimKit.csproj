@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimKit</RootNamespace>
-    <AssemblyName>OSK_0_0_0_1</AssemblyName>
+    <AssemblyName>OSK</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -88,24 +88,6 @@
     <Compile Include="UserInterface\ContentPanels\EjectingCardContentPanel.Designer.cs">
       <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.Designer.cs">
-      <DependentUpon>CardFoundMessage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.Designer.cs">
-      <DependentUpon>CardNotFoundMessage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.Designer.cs">
-      <DependentUpon>WelcomeToThePreAlpha.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInterface\ContentPanels\SavingCardContentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,15 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\EjectingCardContentPanel.resx">
       <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.resx">
-      <DependentUpon>CardFoundMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.resx">
-      <DependentUpon>CardNotFoundMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.resx">
-      <DependentUpon>WelcomeToThePreAlpha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\SavingCardContentPanel.resx">
       <DependentUpon>SavingCardContentPanel.cs</DependentUpon>
