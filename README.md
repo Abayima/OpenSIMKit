@@ -4,13 +4,17 @@
 Open Sim Kit (OSK) is FOSS software for editing the content of SIM cards.
 
 
-Branch Information
+LIVE DEMO RELEASED
 ------------------
 
-This is the livedemo branch of OSK. The code in here has been altered from that in the master branch to add some walk through features that suit the live demo version of the software. Code on this branch is non functional and does not support connection to any SIM card devices.
+Here at OSK, we have released a Live Demo version of the upcoming Alpha app for you to download and test out. Its not functional in terms of actually writing out to a SIM card but it will give you some great insight into the way we are building out the app for the Alpha release.
+
+You can download the live demo exe from here https://github.com/Abayima/OpenSIMKit/blob/livedemo/Executables/OSK_LiveDemo.exe?raw=true
+
+You’ll need to be running windows to get the live demo to work but any version from XP up should do the trick - more OS’s will be supported in the actual Alpha!
 
 
-Community Wiki
+Dev Wiki
 --------------
 
 For full(ish) documentation and discussions visit the project wiki - http://dev.opensimkit.com
