@@ -9,7 +9,7 @@ LIVE DEMO RELEASED
 
 Here at OSK, we have released a Live Demo version of the upcoming Alpha app for you to download and test out. Its not functional in terms of actually writing out to a SIM card but it will give you some great insight into the way we are building out the app for the Alpha release.
 
-You can download the live demo exe from here https://github.com/Abayima/OpenSIMKit/blob/livedemo/Executables/OSK_LiveDemo.exe?raw=true
+You can download the live demo exe from [here](https://github.com/Abayima/OpenSIMKit/blob/livedemo/Executables/OSK_LiveDemo.exe?raw=true)
 
 You’ll need to be running windows to get the live demo to work but any version from XP up should do the trick - more OS’s will be supported in the actual Alpha!
 
