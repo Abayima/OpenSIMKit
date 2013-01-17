@@ -1,7 +1,13 @@
-Open Sim Kit
+﻿Open Sim Kit
 ============
 
 Open Sim Kit (OSK) is FOSS software for editing the content of SIM cards.
+
+
+Branch Information
+------------------
+
+This is the livedemo branch of OSK. The code in here has been altered from that in the master branch to add some walk through features that suit the live demo version of the software. Code on this branch is non functional and does not support connection to any SIM card devices.
 
 
 Community Wiki
