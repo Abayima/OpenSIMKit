@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="api_record_app_use" xml:space="preserve">
+    <value>http://www.opensimkit.com/api/record_app_use</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="app_abayima_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_abayima_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +196,15 @@
   <data name="app_header_modal_systemstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_header_modal_systemstart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="app_icon_exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_icon_exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_icon_prize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_icon_prize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_icon_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_icon_tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="app_loading_small_888888_222222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\app_loading_small_888888_222222.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -215,18 +227,18 @@
     <value>..\Resources\app_splash_screen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="error_devices_devicenotsupported" xml:space="preserve">
-    <value>Open SIMKit detected the device [DEVICE] connected to your computer but this type of device is not supported by SIMKit</value>
+    <value>OSK detected the device [DEVICE] connected to your computer but this type of device is not supported by OSK</value>
   </data>
   <data name="error_devices_nodevices" xml:space="preserve">
-    <value>Open SIMKit could not find any devices connected to your computer.</value>
+    <value>OSK could not find any devices connected to your computer.</value>
   </data>
   <data name="link_help_contribute" xml:space="preserve">
-    <value>http://www.opensimkit.com</value>
+    <value>http://dev.opensimkit.com/index.php/Developers</value>
   </data>
   <data name="link_help_devices" xml:space="preserve">
-    <value>http://www.opensimkit.com</value>
+    <value>http://dev.opensimkit.com/index.php/Supported_Devices</value>
   </data>
   <data name="link_help_stepbystep" xml:space="preserve">
-    <value>http://www.opensimkit.com</value>
+    <value>http://dev.opensimkit.com/index.php/User_Guide</value>
   </data>
 </root>

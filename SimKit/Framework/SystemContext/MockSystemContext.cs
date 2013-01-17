@@ -39,13 +39,7 @@ namespace SimKit.Framework.SystemContext
                     potentiallyConnectedCards = new List<Card>
                         {
                             new Card(SimKit.Properties.Resources.error_devices_nodevices),
-                        };
-                }
-                else if (getCardCount < 3)
-                {
-                    potentiallyConnectedCards = new List<Card>
-                        {
-                            new Card(SimKit.Properties.Resources.error_devices_nodevices),
+                            new Card(SimKit.Properties.Resources.error_devices_devicenotsupported.Replace("[DEVICE]", "Dekart SIM Card Reader")),
                             new Card(SimKit.Properties.Resources.error_devices_devicenotsupported.Replace("[DEVICE]", "Nokia N95")),
                         };
                 }

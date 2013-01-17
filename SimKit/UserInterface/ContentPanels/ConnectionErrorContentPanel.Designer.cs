@@ -68,7 +68,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(365, 50);
             this.label1.TabIndex = 2;
-            this.label1.Text = "There is not SIM card connected that\r\nSIMKit can work with";
+            this.label1.Text = "There is not SIM card connected that\r\nOSK can work with";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
@@ -116,7 +116,7 @@
             // 
             this.contributeHelpLink.AutoSize = true;
             this.contributeHelpLink.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contributeHelpLink.Location = new System.Drawing.Point(93, 33);
+            this.contributeHelpLink.Location = new System.Drawing.Point(56, 33);
             this.contributeHelpLink.Name = "contributeHelpLink";
             this.contributeHelpLink.Size = new System.Drawing.Size(32, 14);
             this.contributeHelpLink.TabIndex = 2;
@@ -132,7 +132,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(171, 42);
             this.label7.TabIndex = 1;
-            this.label7.Text = "To get invloved and contribute\r\nto the development of Open\r\nSIMKit, click";
+            this.label7.Text = "To get invloved and contribute\r\nto the development of OSK, \r\nclick";
             // 
             // pictureBox3
             // 
@@ -189,16 +189,16 @@
             this.panel3.Controls.Add(this.instructionHelpLink);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(3, 40);
+            this.panel3.Location = new System.Drawing.Point(3, 46);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(194, 54);
+            this.panel3.Size = new System.Drawing.Size(194, 45);
             this.panel3.TabIndex = 1;
             // 
             // instructionHelpLink
             // 
             this.instructionHelpLink.AutoSize = true;
             this.instructionHelpLink.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionHelpLink.Location = new System.Drawing.Point(26, 33);
+            this.instructionHelpLink.Location = new System.Drawing.Point(134, 19);
             this.instructionHelpLink.Name = "instructionHelpLink";
             this.instructionHelpLink.Size = new System.Drawing.Size(32, 14);
             this.instructionHelpLink.TabIndex = 2;
@@ -214,7 +214,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(160, 28);
             this.label5.TabIndex = 1;
-            this.label5.Text = "For step by step instructions\r\non using Open SIMKit, click";
+            this.label5.Text = "For step by step instructions\r\non using OSK, click";
             // 
             // pictureBox1
             // 

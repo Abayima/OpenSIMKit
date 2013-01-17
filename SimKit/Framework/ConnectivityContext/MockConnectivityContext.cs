@@ -33,7 +33,7 @@ namespace SimKit.Framework.ConnectivityContext
 
         private void RecordUse()
         {
-            Console.Write("Recording use of SIMKit");
+            Dependencies.LoggingContext.Info("MockConnectivityContext", "Record Use");
         }
 
         #endregion

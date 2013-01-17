@@ -117,11 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>OSK could not detect any connected cards that can be used at the moment.
+  <data name="label4.Text" xml:space="preserve">
+    <value>You are currently running an interactive demo of OSK.
 
-Have a look at the list of possible  connection errors belew. If they don't help 
-you solve the problem, look at the help links on the right.
-</value>
+This version is non-functional in that you can not connect a SIM card
+to the software at the moment.
+
+Using this version gives you a taste of the way the Alpha application
+will work and allows you to walk through the varours things that the 
+Alpha release will support.
+
+As you start clicking around this application you will see message (like 
+this one) telling you what the software is doing and what it will be able
+to do in the Alpha release and later releases.
+
+When you are ready, click the continue button below to start using this
+demo version of OSK!</value>
   </data>
 </root>

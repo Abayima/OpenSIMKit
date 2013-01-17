@@ -117,11 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>OSK could not detect any connected cards that can be used at the moment.
+  <data name="label4.Text" xml:space="preserve">
+    <value>You are currently running an interactive demo of OSK.
 
-Have a look at the list of possible  connection errors belew. If they don't help 
-you solve the problem, look at the help links on the right.
-</value>
+This OSK demo will now show you what happens when OSK can’t 
+find a card connected to your system that it can work with.
+
+The aim of the OSK project is to produce software that allows any 
+SIM card to be managed when connected to a computer in several 
+different ways (including SIM card readers and via a Mobile Phone 
+and USB cable).
+
+Have a look around the next screen then press the ‘Check Again’
+button and this demo will show you how editing SIM cards will 
+look in the upcoming Alpha release.
+
+When you are ready, click the continue button below.</value>
   </data>
 </root>

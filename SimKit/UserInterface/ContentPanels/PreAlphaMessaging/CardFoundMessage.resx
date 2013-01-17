@@ -117,11 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>OSK could not detect any connected cards that can be used at the moment.
+  <data name="label4.Text" xml:space="preserve">
+    <value>You are currently running an Interactive Demo of OSK.
 
-Have a look at the list of possible  connection errors belew. If they don't help 
-you solve the problem, look at the help links on the right.
-</value>
+This OSK demo will now show you what happens when you 
+are using this software to edit the content stored in the SMS
+message store of a SIM card.
+
+You can edit content in the message boxes on the left of the next 
+screen and simulate writing these messages out to the SIM card
+by using the ‘Save’ button. You can also simulate ejecting the 
+card by pressing the ‘Eject’ button.
+
+When you are ready, click the continue button below!</value>
   </data>
 </root>

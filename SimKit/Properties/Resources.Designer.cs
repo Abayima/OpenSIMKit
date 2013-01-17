@@ -61,6 +61,15 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://www.opensimkit.com/api/record_app_use.
+        /// </summary>
+        internal static string api_record_app_use {
+            get {
+                return ResourceManager.GetString("api_record_app_use", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap app_abayima_logo {
@@ -313,6 +322,36 @@ namespace SimKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_icon_exclamation {
+            get {
+                object obj = ResourceManager.GetObject("app_icon_exclamation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_icon_prize {
+            get {
+                object obj = ResourceManager.GetObject("app_icon_prize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_icon_tick {
+            get {
+                object obj = ResourceManager.GetObject("app_icon_tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap app_loading_small_888888_222222 {
             get {
                 object obj = ResourceManager.GetObject("app_loading_small_888888_222222", resourceCulture);
@@ -381,7 +420,7 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open SIMKit detected the device [DEVICE] connected to your computer but this type of device is not supported by SIMKit.
+        ///   Looks up a localized string similar to OSK detected the device [DEVICE] connected to your computer but this type of device is not supported by OSK.
         /// </summary>
         internal static string error_devices_devicenotsupported {
             get {
@@ -390,7 +429,7 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open SIMKit could not find any devices connected to your computer..
+        ///   Looks up a localized string similar to OSK could not find any devices connected to your computer..
         /// </summary>
         internal static string error_devices_nodevices {
             get {
@@ -399,7 +438,7 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        ///   Looks up a localized string similar to http://dev.opensimkit.com/index.php/Developers.
         /// </summary>
         internal static string link_help_contribute {
             get {
@@ -408,7 +447,7 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        ///   Looks up a localized string similar to http://dev.opensimkit.com/index.php/Supported_Devices.
         /// </summary>
         internal static string link_help_devices {
             get {
@@ -417,7 +456,7 @@ namespace SimKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://www.opensimkit.com.
+        ///   Looks up a localized string similar to http://dev.opensimkit.com/index.php/User_Guide.
         /// </summary>
         internal static string link_help_stepbystep {
             get {

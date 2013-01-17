@@ -48,7 +48,7 @@ namespace SimKit.UserInterface.ContentPanels
 
         #region Event Handlers
 
-        private void imageButton1_Click(object sender, EventArgs e)
+        private void continueButton_Click(object sender, EventArgs e)
         {
             //Collect the users choices from the UI elements
             var recordUse = this.customCheckbox1.Selected;

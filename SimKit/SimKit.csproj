@@ -49,6 +49,7 @@
     <Compile Include="Framework\ConnectivityContext\IConnectivityContext.cs" />
     <Compile Include="Framework\ConnectivityContext\MockConnectivityContext.cs" />
     <Compile Include="Framework\ConnectivityContext\UserConnectivityChoicesEnum.cs" />
+    <Compile Include="Framework\ConnectivityContext\VersionAlphaConnectivityContext.cs" />
     <Compile Include="Framework\Dependencies.cs" />
     <Compile Include="Framework\LoggingContext\ConsoleLoggingContext.cs" />
     <Compile Include="Framework\LoggingContext\ILoggingContext.cs" />
@@ -86,6 +87,24 @@
     </Compile>
     <Compile Include="UserInterface\ContentPanels\EjectingCardContentPanel.Designer.cs">
       <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.Designer.cs">
+      <DependentUpon>CardFoundMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.Designer.cs">
+      <DependentUpon>CardNotFoundMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.Designer.cs">
+      <DependentUpon>WelcomeToThePreAlpha.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\ContentPanels\SavingCardContentPanel.cs">
       <SubType>UserControl</SubType>
@@ -144,6 +163,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\EjectingCardContentPanel.resx">
       <DependentUpon>EjectingCardContentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\CardFoundMessage.resx">
+      <DependentUpon>CardFoundMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\CardNotFoundMessage.resx">
+      <DependentUpon>CardNotFoundMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ContentPanels\PreAlphaMessaging\WelcomeToThePreAlpha.resx">
+      <DependentUpon>WelcomeToThePreAlpha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ContentPanels\SavingCardContentPanel.resx">
       <DependentUpon>SavingCardContentPanel.cs</DependentUpon>
@@ -246,6 +274,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_red_button_out.png" />
     <EmbeddedResource Include="Resources\app_red_button_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_icon_exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_icon_tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app_icon_prize.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

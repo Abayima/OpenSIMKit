@@ -15,5 +15,11 @@ namespace SimKit.Framework.LoggingContext
         {
             Console.WriteLine("INFO: " + context + ": " + message);
         }
+
+
+        public void Error(string context, Exception exception)
+        {
+            Console.WriteLine("ERROR: " + context + ": " + exception);
+        }
     }
 }

@@ -9,5 +9,7 @@ namespace SimKit.Framework.LoggingContext
         void Debug(string context, string message);
 
         void Info(string context, string message);
+
+        void Error(string content, Exception exception);
     }
 }

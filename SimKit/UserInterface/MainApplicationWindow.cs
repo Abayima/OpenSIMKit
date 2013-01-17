@@ -101,13 +101,22 @@ namespace SimKit.UserInterface
                     this.contentPanel.Controls.Add(new ContentPanels.EjectingCardContentPanel(this, e.ConnectedCard));
                     break;
                 case ContentPanelStates.ConnectionQuestions:
-                    this.contentPanel.Controls.Add(new ContentPanels.ConnectionQuestionsContentPanel(this));
+                    if (sender is ContentPanels.PreAlphaMessaging.WelcomeToThePreAlpha)
+                        this.contentPanel.Controls.Add(new ContentPanels.ConnectionQuestionsContentPanel(this));
+                    else
+                        this.contentPanel.Controls.Add(new ContentPanels.PreAlphaMessaging.WelcomeToThePreAlpha(this));
                     break;
                 case ContentPanelStates.CardNotFound:
-                    this.contentPanel.Controls.Add(new ContentPanels.ConnectionErrorContentPanel(this, e.PotentiallyConnectedCards));
+                    if (sender is ContentPanels.PreAlphaMessaging.CardNotFoundMessage)
+                        this.contentPanel.Controls.Add(new ContentPanels.ConnectionErrorContentPanel(this, e.PotentiallyConnectedCards));
+                    else
+                        this.contentPanel.Controls.Add(new ContentPanels.PreAlphaMessaging.CardNotFoundMessage(this, e.PotentiallyConnectedCards));
                     break;
                 case ContentPanelStates.CardFound:
-                    this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard, false));
+                    if (sender is ContentPanels.PreAlphaMessaging.CardFoundMessage)
+                        this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard, false));
+                    else
+                        this.contentPanel.Controls.Add(new ContentPanels.PreAlphaMessaging.CardFoundMessage(this, e.ConnectedCard));
                     break;
                 case ContentPanelStates.CardSaved:
                     this.contentPanel.Controls.Add(new ContentPanels.EditingCardContentPanel(this, e.ConnectedCard, true));
@@ -139,7 +148,7 @@ namespace SimKit.UserInterface
 
         private void socialTwitterButton_Click(object sender, EventArgs e)
         {
-            OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.twitter.com");
+            OpenWebBrowserOrShowInternetAddressInMessageBox("https://twitter.com/search?q=open%20sim%20kit&src=typd");
         }
 
         private void socialHomeButton_Click(object sender, EventArgs e)
@@ -150,6 +159,16 @@ namespace SimKit.UserInterface
         private void abayimaButton_Click(object sender, EventArgs e)
         {
             OpenWebBrowserOrShowInternetAddressInMessageBox("http://www.abayima.com");
+        }
+
+        private void devWikiLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenWebBrowserOrShowInternetAddressInMessageBox("http://dev.opensimkit.com");
+        }
+
+        private void knightNewsChallengeLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenWebBrowserOrShowInternetAddressInMessageBox("http://blog.abayima.com/abayima-wins-in-the-2012-knight-news-challenge/");
         }
 
         #endregion
@@ -177,6 +196,5 @@ namespace SimKit.UserInterface
         }
 
         #endregion
-
     }
 }
