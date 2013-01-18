@@ -31,7 +31,7 @@ namespace SimKit
             {
                 //TODO these need to be changed to real context's once they are implemented
                 Dependencies.SystemContext = new MockSystemContext(false);
-                Dependencies.ConnectivityContext = new MockConnectivityContext();
+                Dependencies.ConnectivityContext = new VersionAlphaConnectivityContext();
                 Dependencies.LoggingContext = new ConsoleLoggingContext();
                 return;
             }

@@ -35,9 +35,9 @@ namespace SimKit.Framework.ConnectivityContext
         {
             try
             {
-                //Make a call to the opensimkit api
+                //Make an fire and forget call to the opensimkit api
                 var request = WebRequest.Create(SimKit.Properties.Resources.api_record_app_use);
-                var response = request.GetResponse();
+                request.BeginGetResponse(delegate (IAsyncResult r) {}, null);
             }
             catch (Exception e)
             {
