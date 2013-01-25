@@ -217,10 +217,10 @@
     <EmbeddedResource Include="Resources\app_button_blue_over.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\app_button_social_github_out.png" />
+    <EmbeddedResource Include="Resources\app_button_social_github_out.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\app_button_social_github_over.png" />
+    <EmbeddedResource Include="Resources\app_button_social_github_over.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\app_button_social_twitter_out.png" />

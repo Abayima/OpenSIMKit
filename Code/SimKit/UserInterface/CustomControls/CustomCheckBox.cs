@@ -31,6 +31,9 @@ namespace SimKit.UserInterface.CustomControls
         {
             //Build the base UI
             InitializeComponent();
+
+            //Default to not selected
+            SetNoSelectedUI();
         }
 
         #endregion
