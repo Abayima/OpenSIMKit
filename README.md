@@ -1,37 +1,27 @@
-﻿Open Sim Kit
+﻿Open SIM Kit
 ============
 
-Open Sim Kit (OSK) is FOSS software for editing the content of SIM cards.
-
-
-LIVE DEMO RELEASED
-------------------
-
-Here at OSK, we have released a Live Demo version of the upcoming Alpha app for you to download and test out. Its not functional in terms of actually writing out to a SIM card but it will give you some great insight into the way we are building out the app for the Alpha release.
-
-You can download the live demo exe from [here](https://github.com/Abayima/OpenSIMKit/blob/livedemo/Executables/OSK_LiveDemo.exe?raw=true)
-
-You’ll need to be running windows to get the live demo to work but any version from XP up should do the trick - more OS’s will be supported in the actual Alpha!
+Open SIM Kit (OSK) is FOSS software for editing the content of SIM cards.
 
 
 Dev Wiki
 --------------
 
-For full(ish) documentation and discussions visit the project wiki - http://dev.opensimkit.com
+For full(ish) documentation and discussions visit the project wiki - http://opensimkit.com
 
 
 Introduction
 ------------
 
-Open Sim Kit (OSK) is a technology platform for sharing digital information using feature phones while removing mobile service providers as the ‘middle-man’. The goal is to offer a discreet and resilient means for communication during scenarios where mobile networks have either been compromised or otherwise disrupted.
+Open SIM Kit (OSK) is a technology platform for sharing digital information using feature phones while removing mobile service providers as the ‘middle-man’. The goal is to offer a discreet and resilient means for communication during scenarios where mobile networks have either been compromised or otherwise disrupted.
 
-Open Sim Kit was developed to enable the greater Abayima project, which aims to serve the world’s poorest users who’s voices are often silenced when the cheap/accessible forms of mobile communication are severed.  These populations cannot afford high-tech solutions and rarely possess the skills to make use of them even if they could.
+Open SIM Kit was developed to enable the greater Abayima project, which aims to serve the world’s poorest users who’s voices are often silenced when the cheap/accessible forms of mobile communication are severed.  These populations cannot afford high-tech solutions and rarely possess the skills to make use of them even if they could.
 
 This document outlines the goals of the project, the potential use cases, and timeline for the release of the open source project.
 
 Find us on Github - http://github.com/Abayima/OpenSIMKit
 
-NOTE: Contact info [at] simkit.org with additional questions or feedback.
+NOTE: Contact jon@d8a.com with additional questions or feedback.
 
 
 Project Overview and Origins
@@ -45,29 +35,14 @@ This is not that different from simply using pen and paper to write discreet mes
 
 There is a secondary challenge which we describe in more details below - turning the sim-mobile platform into a viable publishing platform for content distribution without relying upon mobile networks.
 
-Our aim is to ultimately make it possible to circumvent authoritarian and malicious governments who often target telecom infrastructure and service providers to silence their opposition.  We've seen a need for solutions like Open Sim Kit in locations all over the world, from Syria and Egypt to Uganda and Libya.
-
-
-Abayima
--------
-
-Abayima is a non-profit organization that provides technology solutions for protecting human rights and free speech around the globe. We are the primary contributors to the Open SIM Kit project.
-
-
-Milestones and Timeline
------------------------
-
-December		Public Documents and Planning  
-				Pilots with Partners  
-Mid-January		Abayima/SIM Kit Relaunch  
-				Open Git Hub repository  
-February		Sim Kit for Publishers  
+Our aim is to ultimately make it possible to circumvent authoritarian and malicious governments who often target telecom infrastructure and service providers to silence their opposition.  We've seen a need for solutions like Open SIM Kit in locations all over the world, from Syria and Egypt to Uganda and Libya.
 
 
 Contributors & Contacts
 -----------------------
-Jon Gosier		jon@abayima.com  
-Matt Griffiths	matt@abayima.com  
+Jon Gosier		jon@d8a.com  
+Ahmed Maawy		ahmed@d8a.com
+Matt Griffiths	matt@d8a.com 
 
 
 Twitter
