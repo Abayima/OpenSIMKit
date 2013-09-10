@@ -1,5 +1,5 @@
-README -- OPEN SIM KIT v1.0 "GULU"
-==================================
+OPEN SIM KIT v1.0 "GULU"
+========================
 
 Open SIM Kit (OSK) is an open source toolkit for modifying the contents of SIM cards. 
 
@@ -13,8 +13,8 @@ Open SIM Kit (OSK) is a technology platform for sharing digital information usin
 
 This document outlines the goals of the project, the potential use cases, and timeline for the release of the open source project.
 
-Find us on Github - http://github.com/Abayima/OpenSIMKit
-Documentation - http://opensimkit.com/documentation
+	Find us on Github - http://github.com/Abayima/OpenSIMKit
+	Documentation - http://opensimkit.com/documentation
 
 NOTE: Contact jon@d8a.com with additional questions or feedback.
 
@@ -24,15 +24,19 @@ INSTRUCTIONS
 
 The Zip file contains the following when extracted...
 
-	1. OpenSIMKit.jar (JAR file, auto executes on Mac and Windows).
-	2. lib folder: Dependencies that OpenSIMKit looks for. All dependencies are included.
-	3. javadoc: A javadoc (This is only for developers who need it.)
+	* OpenSIMKit.jar (JAR file, auto executes on Mac and Windows).
+	* lib folder: Dependencies that OpenSIMKit looks for. All dependencies are included.
+	* javadoc: A javadoc (This is only for developers who need it.)
 
-To use OSK...
+To launch OSK...
 
-	1. On MacOSX double clicking it will invoke the application if Java is installed (which is the case with most MacOSX).
-	2. On Windows Java will have to be downloaded and installed. You can then just double click this file to run it automatically.
-	3. On Linux the command to be run shall be java -jar ./OpenSIMKit.jar provided JDK is installed on the Linux machine.
+	* On MacOSX double clicking OpenSIMKit.jar will invoke the application if Java is installed. If it's not OSX will download and install what it needs for the Java runtime. 
+	* On Windows Java will have to be downloaded and installed. You can then just double click OpenSIMKit.jar to run it automatically.
+	* On Linux the command to be run shall be java -jar ./OpenSIMKit.jar provided JDK is installed on the Linux machine.
+	
+Setting up OSK....
+	
+	* Upon the first launch of OpenSIMKit a new folder called 'plugins' will be created. Within that folder there are two other folders, 'drivers' and 'extensions'. These folders are where you may place addons and extension drivers.
 
 The JAR file already has all dependencies compiled within itself.
 
